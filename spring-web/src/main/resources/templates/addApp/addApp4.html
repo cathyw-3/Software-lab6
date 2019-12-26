@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工业APP分类分级和测评系统</title>
+</head>
+<body>
+<div style="background: aquamarine; width: 100px; height: 100px; border: aquamarine; border-radius: 50%; position: absolute; left: 10px; top: 10px"></div>
+<a href="../login" style="position: absolute; left: 1200px; top: 40px; font-size: 20px">退出</a>
+<strong style="font-size: 30px; position: absolute; left: 130px; top: 40px">您好！这里是工业APP分类分级和测评项目平台。</strong>
+<strong style="font-size: 50px; position: absolute; left: 37px; top: 23px">❀</strong>
+
+<p>
+    <img src="../index/stripe.jpg" style="width: 1280px; height: 20px; position: absolute; left: 0; top: 120px">
+</p>
+
+<div style="background: black; width: 350px; height: 500px; position: absolute; left: 0; top: 150px"></div>
+
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 75px; top: 180px; background: aquamarine; border: aquamarine; border-radius: 10px">个人所有项目</button>
+<button onclick="window.location.href = 'addApp4'" style="font-size: 30px; position: absolute; left: 45px; top: 280px; background: aquamarine; border: aquamarine; border-radius: 10px">新建工业APP申请</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 380px; background: aquamarine; border: aquamarine; border-radius: 10px">等待审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 480px; background: aquamarine; border: aquamarine; border-radius: 10px">正在审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 15px; top: 580px; background: aquamarine; border: aquamarine; border-radius: 10px">已完成审核的工业APP</button>
+
+<strong style="position: absolute; left: 380px; top: 170px; font-size: 20px">2、工业APP名称</strong>
+
+<form action="addApp5" method="post">
+
+    <p style="font-size: 20px; position: absolute; left: 400px; top: 213px">适用领域：</p>
+    <input type="text" name="field" style="background: lightgrey; width: 180px; height: 30px; border-radius: 10px; position: absolute; left: 500px; top: 230px">
+    <p style="font-size: 20px; position: absolute; left: 400px; top: 253px">业务环节：</p>
+    <input type="text" name="operation" style="background: lightgrey; width: 180px; height: 30px; border-radius: 10px; position: absolute; left: 500px; top: 270px">
+    <p style="font-size: 20px; position: absolute; left: 400px; top: 293px">功能用途：</p>
+    <input type="text" name="function" style="background: lightgrey; width: 180px; height: 30px; border-radius: 10px; position: absolute; left: 500px; top: 310px">
+    <p style="font-size: 20px; position: absolute; left: 400px; top: 333px">名称选择：</p>
+    <input type="checkbox" name="name" value="软件" style="position: absolute; left: 500px; top: 360px">
+    <div style="position: absolute; left: 520px; top: 358px">软件</div>
+    <input type="checkbox" name="name" value="工业APP" style="position: absolute; left: 570px; top: 360px">
+    <div style="position: absolute; left: 590px; top: 358px">工业APP</div>
+    <input type="checkbox" name="name" value="APP" style="position: absolute; left: 660px; top: 360px">
+    <div style="position: absolute; left: 680px; top: 358px">APP</div>
+    <input type="submit" value="下一页" style="font-size: 20px; position: absolute; left: 950px; top: 560px">
+
+</form>
+
+<p style="position: absolute; left: 430px; top: 430px">
+    注：
+    1、工业APP名称的长度不应超过40个英文字符/ASCII字符<br/>
+    2、字段间可用“-”间隔<br/>
+    3、工业APP名称不应侵犯他人权利，包括但不限于著作权、商标权、名誉权<br/>
+    4、工业APP名称不应含有绝对性、宣传性的描述<br/>
+    5、工业APP不应包含使用频率较少且难以直接输入的符号
+</p>
+
+</body>
+</html>

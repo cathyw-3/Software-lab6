@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工业APP分类分级和测评系统</title>
+</head>
+<body>
+<div style="background: aquamarine; width: 100px; height: 100px; border: aquamarine; border-radius: 50%; position: absolute; left: 10px; top: 10px"></div>
+<a href="../login" style="position: absolute; left: 1200px; top: 40px; font-size: 20px">退出</a>
+<strong style="font-size: 30px; position: absolute; left: 130px; top: 40px">您好！这里是工业APP分类分级和测评项目平台。</strong>
+<strong style="font-size: 50px; position: absolute; left: 37px; top: 23px">❀</strong>
+
+<p>
+    <img src="../index/stripe.jpg" style="width: 1280px; height: 20px; position: absolute; left: 0; top: 120px">
+</p>
+
+<div style="background: black; width: 350px; height: 500px; position: absolute; left: 0; top: 150px"></div>
+
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 75px; top: 180px; background: aquamarine; border: aquamarine; border-radius: 10px">个人所有项目</button>
+<button onclick="window.location.href = 'addApp5'" style="font-size: 30px; position: absolute; left: 45px; top: 280px; background: aquamarine; border: aquamarine; border-radius: 10px">新建工业APP申请</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 380px; background: aquamarine; border: aquamarine; border-radius: 10px">等待审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 480px; background: aquamarine; border: aquamarine; border-radius: 10px">正在审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 15px; top: 580px; background: aquamarine; border: aquamarine; border-radius: 10px">已完成审核的工业APP</button>
+
+<strong style="position: absolute; left: 380px; top: 170px; font-size: 20px">3、安全等级自评</strong>
+
+<form action="addApp6" method="post">
+
+    <div style="position: absolute; left: 400px; top: 200px">潜在危险分析：(用初步危险分析PHA方法，确定潜在危险)</div>
+
+    <textarea type="text" name="analyse" style="width: 300px; height: 50px; border-radius: 10px; position: absolute; left: 400px; top: 230px"></textarea>
+
+    <div style="position: absolute; left: 400px; top: 300px">危险严重性和可能性：(灾难的 严重的 轻微的 轻度的)</div>
+
+    <textarea type="text" name="posibility" style="width: 300px; height: 50px; border-radius: 10px; position: absolute; left: 400px; top: 330px"></textarea>
+
+    <div style="position: absolute; left: 400px; top: 400px">系统的风险指标：(经常、很可能、偶然、很少、极少)</div>
+
+    <textarea type="text" name="system" style="width: 300px; height: 50px; border-radius: 10px; position: absolute; left: 400px; top: 430px"></textarea>
+
+    <div style="position: absolute; left: 400px; top: 500px">控制类别：(I II III IV四类，根据相关定义决定)</div>
+
+    <textarea type="text" name="catalog" style="width: 300px; height: 50px; border-radius: 10px; position: absolute; left: 400px; top: 530px"></textarea>
+
+    <div style="position: absolute; left: 400px; top: 600px">安全等级确定：(A、B、C、D四个等级确定)</div>
+
+    <textarea type="text" name="safe_level" style="width: 300px; height: 50px; border-radius: 10px; position: absolute; left: 400px; top: 630px"></textarea>
+
+
+    <input type="submit" value="下一页" style="font-size: 20px; position: absolute; left: 950px; top: 560px">
+
+</form>
+
+</body>
+</html>

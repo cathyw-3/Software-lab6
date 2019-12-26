@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工业APP分类分级和测评系统</title>
+</head>
+<p>
+<div style="background: aquamarine; width: 100px; height: 100px; border: aquamarine; border-radius: 50%; position: absolute; left: 10px; top: 10px"></div>
+<a href="../login" style="position: absolute; left: 1200px; top: 40px; font-size: 20px">退出</a>
+<strong style="font-size: 30px; position: absolute; left: 130px; top: 40px">您好！这里是工业APP分类分级和测评项目平台。</strong>
+<strong style="font-size: 50px; position: absolute; left: 37px; top: 23px">❀</strong>
+
+<p>
+    <img src="../index/stripe.jpg" style="width: 1280px; height: 20px; position: absolute; left: 0; top: 120px">
+</p>
+
+<div style="background: black; width: 350px; height: 500px; position: absolute; left: 0; top: 150px"></div>
+
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 75px; top: 180px; background: aquamarine; border: aquamarine; border-radius: 10px">个人所有项目</button>
+<button onclick="window.location.href = 'addApp2'" style="font-size: 30px; position: absolute; left: 45px; top: 280px; background: aquamarine; border: aquamarine; border-radius: 10px">新建工业APP申请</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 380px; background: aquamarine; border: aquamarine; border-radius: 10px">等待审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 30px; top: 480px; background: aquamarine; border: aquamarine; border-radius: 10px">正在审核的工业APP</button>
+<button onclick="window.location.href = '../home_page'" style="font-size: 30px; position: absolute; left: 15px; top: 580px; background: aquamarine; border: aquamarine; border-radius: 10px">已完成审核的工业APP</button>
+
+<strong style="position: absolute; left: 420px; top: 200px; font-size: 20px">业务环节分类（单选）：</strong>
+
+<form action="addApp3" method="post">
+<p style="position: absolute; left: 400px; top: 230px">研发设计工业APP：</p>
+    <p>
+    <input type="checkbox" name="operation_classify" value="产品设计类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 285px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 284px">产品设计类</div>
+    <input type="checkbox" name="operation_classify" value="工艺流程设计类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 305px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 304px">工艺流程设计类</div>
+    <input type="checkbox" name="operation_classify" value="过程控制设计类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 325px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 324px">过程控制设计类</div>
+    <input type="checkbox" name="operation_classify" value="产线设计与实现类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 345px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 344px">产线设计与实现类</div>
+    <input type="checkbox" name="operation_classify" value="仿真类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 365px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 364px">仿真类</div>
+    <input type="checkbox" name="operation_classify" value="试制试验类" style="width: 15px; height: 15px; position: absolute; left: 400px; top: 385px" />
+    <div style="font-size: 16px; position: absolute; left: 420px; top: 384px">试制试验类</div>
+    </p>
+<p style="position: absolute; left: 600px; top: 230px">生产制造工业APP：</p>
+    <p>
+    <input type="checkbox" name="operation_classify" value="生产计划管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 285px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 284px">生产计划管理类</div>
+    <input type="checkbox" name="operation_classify" value="生产作业管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 305px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 304px">生产作业管理类</div>
+    <input type="checkbox" name="operation_classify" value="物料管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 325px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 324px">物料管理类</div>
+    <input type="checkbox" name="operation_classify" value="设备管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 345px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 344px">设备管理类</div>
+    <input type="checkbox" name="operation_classify" value="工装管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 365px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 364px">工装管理类</div>
+    <input type="checkbox" name="operation_classify" value="质量管理类" style="width: 15px; height: 15px; position: absolute; left: 600px; top: 385px" />
+    <div style="font-size: 16px; position: absolute; left: 620px; top: 384px">质量管理类</div>
+    </p>
+
+<p style="position: absolute; left: 800px; top: 230px">运维服务工业APP：</p>
+    <p>
+    <input type="checkbox" name="operation_classify" value="数据收集监控类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 285px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 284px">数据收集监控类</div>
+    <input type="checkbox" name="operation_classify" value="预测性维护类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 305px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 304px">预测性维护类</div>
+    <input type="checkbox" name="operation_classify" value="应急处理类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 325px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 324px">应急处理类</div>
+    <input type="checkbox" name="operation_classify" value="节能服务类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 345px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 344px">节能服务类</div>
+    <input type="checkbox" name="operation_classify" value="健康评价类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 365px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 364px">健康评价类</div>
+    <input type="checkbox" name="operation_classify" value="售后服务类" style="width: 15px; height: 15px; position: absolute; left: 800px; top: 385px" />
+    <div style="font-size: 16px; position: absolute; left: 820px; top: 384px">售后服务类</div>
+    </p>
+
+<p style="position: absolute; left: 1000px; top: 230px">经营管理工业APP：</p>
+    <p>
+    <input type="checkbox" name="operation_classify" value="采购管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 285px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 284px">采购管理类</div>
+    <input type="checkbox" name="operation_classify" value="产业链协同类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 305px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 304px">产业链协同类</div>
+    <input type="checkbox" name="operation_classify" value="风险管控类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 325px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 324px">风险管控类</div>
+    <input type="checkbox" name="operation_classify" value="销售管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 345px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 344px">销售管理类</div>
+    <input type="checkbox" name="operation_classify" value="物流管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 365px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 364px">物流管理类</div>
+    <input type="checkbox" name="operation_classify" value="安全管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 385px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 384px">安全管理类</div>
+    <input type="checkbox" name="operation_classify" value="认证管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 405px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 404px">认证管理类</div>
+    <input type="checkbox" name="operation_classify" value="项目管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 425px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 424px">项目管理类</div>
+    <input type="checkbox" name="operation_classify" value="人才管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 445px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 444px">人才管理类</div>
+    <input type="checkbox" name="operation_classify" value="组织管理类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 465px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 464px">组织管理类</div>
+    <input type="checkbox" name="operation_classify" value="辅助决策类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 485px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 484px">辅助决策类</div>
+    <input type="checkbox" name="operation_classify" value="企业资产类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 505px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 504px">企业资产类</div>
+    <input type="checkbox" name="operation_classify" value="过程优化类" style="width: 15px; height: 15px; position: absolute; left: 1000px; top: 525px" />
+    <div style="font-size: 16px; position: absolute; left: 1020px; top: 524px">过程优化类</div>
+    </p>
+
+    <input type="submit" value="下一页" style="font-size: 20px; position: absolute; left: 1050px; top: 560px">
+
+</form>
+
+</body>
+</html>
